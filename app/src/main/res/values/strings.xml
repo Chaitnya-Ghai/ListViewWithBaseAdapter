@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ListViewWithBaseAdapter</string>
+    <string name="enter">Enter</string>
+    <string name="add">Add</string>
+    <string name="cancel">Cancel</string>
+    <string name="tittle">Enter Data</string>
+</resources>

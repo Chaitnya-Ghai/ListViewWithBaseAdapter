@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/customDialog"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/customDialog"
+        android:text="@string/tittle"
+        android:layout_margin="16dp"
+        android:id="@+id/tvCustomDialog"
+        />
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:id="@+id/etDialog"
+    app:layout_constraintTop_toTopOf="@+id/tvCustomDialog"
+    />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addBtn"
+        android:layout_margin="8dp"
+        android:text="@string/add"
+        app:layout_constraintTop_toBottomOf="@+id/etDialog"
+        app:layout_constraintStart_toStartOf="@+id/customDialog"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancel_button"
+        android:text="@string/cancel"
+        app:layout_constraintTop_toBottomOf="@+id/etDialog"
+        app:layout_constraintEnd_toEndOf="@+id/customDialog"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
